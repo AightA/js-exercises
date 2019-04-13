@@ -13,7 +13,6 @@ var kinningParkHouse = {
     email: "margaret@fake-emails.com"
   }
 };
-
 var parkAvenueHouse = {
   address: "50 Park Avenue",
   price: 195000,
@@ -23,21 +22,37 @@ var parkAvenueHouse = {
     email: "marie.m@real-emails.com"
   }
 };
-
 /*
   DO NOT EDIT ANYTHING ABOVE THIS LINE
-
   WRITE YOUR CODE BELOW
 */
 
 // returns the full name (first name + last name) of the owner of the house
-function getOwnerFullName(house) {}
+function getOwnerFullName(house) {
+  return (
+    kinningParkHouse.currentOwner.firstName +
+    " " +
+    kinningParkHouse.currentOwner.lastName
+  );
+}
 
 // returns an array of the owners' email addresses of the two houses
-function getEmailAddresses(house1, house2) {}
+function getEmailAddresses(house1, house2) {
+  return (
+    kinningParkHouse.currentOwner.email +
+    ", " +
+    parkAvenueHouse.currentOwner.email
+  );
+}
 
 // returns the address for the cheapest house out of the two
-function getCheapestAddress(house1, house2) {}
+function getCheapestAddress(house1, house2) {
+  if (kinningParkHouse.price > parkAvenueHouse.price) {
+    return parkAvenueHouse.address;
+  } else {
+    return kinningParkHouse.address;
+  }
+}
 
 /*
   DO NOT EDIT ANYTHING BELOW THIS LINE

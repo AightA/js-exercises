@@ -42,3 +42,11 @@ var writers = [
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+
+// console.log (writers.filter())
+
+function createMessage(writer) {
+  // return "Hi, my name is " + firstName + lastName " I am " + age +  "years old, and work as a " + occupation ;
+}
+
+writers.map(creatMessage);

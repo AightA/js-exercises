@@ -1,12 +1,15 @@
-/* 
-A person named Alice is defined below. 
-Add a method "sayName" so this person can say their own name. 
+/*
+A person named Alice is defined below.
+Add a method "sayName" so this person can say their own name.
 Hint: use 'this' keyword to access the name property.
 */
 
 var person = {
   name: "Alice",
-  age: 25
+  age: 25,
+  sayName: function() {
+    return "May name is " + this.name;
+  }
 };
 
 /*

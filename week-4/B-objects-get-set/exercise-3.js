@@ -3,9 +3,16 @@
 */
 
 // WRITE CODE BELOW THIS
+var kitten = {
+  name: "Gilbert",
+  age: 2,
+  colour: "black"
+};
+
+var kittenName = kitten.name;
 
 // WRITE CODE ABOVE THIS
 
-console.log(kitten.name);
+console.log(kittenName);
 
 // -> it should output: "Gilbert"

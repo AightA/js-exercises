@@ -8,6 +8,10 @@ var kitten = {
   furColour: "brown"
 };
 
-// YOUR CODE GOES BELOW HERE
-
+(kitten.ageMonths = 10),
+  // YOUR CODE GOES BELOW HERE
+  console.log(kitten);
+console.log(kitten.ageMonths);
+console.log(kitten.isFemale);
+console.log(kitten.furColour);
 // YOUR CODE GOES ABOVE HERE
